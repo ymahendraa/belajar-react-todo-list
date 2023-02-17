@@ -1,0 +1,14 @@
+const [toDos, setToDos] = useState([{ key: "1", name: "Makan" }]);
+
+
+const addTodo = (value) => {
+    setToDos([...toDos, { key: Math.random().toString(), name: value }]);
+};
+
+const deleteTodo = (key) => {
+    setToDos((prev) => {
+      return prev.filter((todo) => todo.key != key);
+    });
+};
+
+<ToDos deleteHandler={deleteTodo} ToDos={toDos} />

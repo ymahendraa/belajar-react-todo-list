@@ -1,6 +1,8 @@
+import React from "react";
 import ToDo from "./ToDo";
 
 const ToDos = ({ ToDos, deleteHandler }) => {
+  console.log("ini terender");
   return (
     <div>
       {ToDos?.map((todo) => (
@@ -13,4 +15,5 @@ const ToDos = ({ ToDos, deleteHandler }) => {
     </div>
   );
 };
+// export default ToDos;
 export default ToDos;

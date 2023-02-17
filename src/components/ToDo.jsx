@@ -1,5 +1,5 @@
 const ToDo = ({ id, toDoName, deleteHandler }) => {
-  console.log(id);
+  // console.log(id);
   return (
     <div
       style={{

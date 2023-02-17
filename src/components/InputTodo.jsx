@@ -1,7 +1,8 @@
-import { useState } from "react";
+import React, { useState, useMemo } from "react";
 
 const InputTodo = ({ submitHandler }) => {
   const [todo, setTodo] = useState("");
+  console.log("ini dirender");
   return (
     <div
       style={{ display: "flex", flexDirection: "row", alignItems: "center" }}
@@ -25,4 +26,4 @@ const InputTodo = ({ submitHandler }) => {
     </div>
   );
 };
-export default InputTodo;
+export default React.memo(InputTodo);
